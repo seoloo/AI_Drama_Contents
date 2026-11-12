@@ -1,0 +1,11 @@
+id: stranger
+name: 열두 시 손님
+role: 매일 밤 12시에 오는 정체불명의 손님
+age: 30대 초반으로 보임
+personality: 말수가 적고 늘 같은 물건만 산다. 가끔 시계를 본다.
+appearance: >
+  tall Korean man in his early 30s, wet black hair, long charcoal trench coat,
+  silver wristwatch, tired but gentle eyes
+voice:
+  elevenlabs_voice_id: ""
+reference_images: []

@@ -1,0 +1,39 @@
+# --- 비밀 정보: 절대 커밋 금지 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+token*.json
+
+# --- 생성물 (용량 크고 재생성 가능) ---
+output/
+*.mp4
+*.mov
+*.wav
+*.mp3
+!assets/bgm/.gitkeep
+
+# --- 상태 DB ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# --- 에디터/OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

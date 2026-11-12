@@ -1,0 +1,14 @@
+# 캐릭터 바이블 - 캐릭터 일관성의 기준입니다.
+# appearance 는 이 캐릭터가 나오는 모든 컷의 이미지/영상 프롬프트에 자동으로 붙습니다.
+id: jiwoo
+name: 서지우
+role: 주인공, 편의점 야간 알바생
+age: 24
+personality: 무심한 척하지만 관찰력이 좋다. 혼잣말이 많다.
+appearance: >
+  young Korean woman, 24, short black bob hair with straight bangs, round glasses,
+  oversized green convenience-store vest over a grey hoodie
+voice:
+  elevenlabs_voice_id: ""
+# 캐릭터 일관성을 위한 참조 이미지 (이미지/영상 모델이 지원할 때 함께 전달)
+reference_images: []

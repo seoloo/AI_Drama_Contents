@@ -1,0 +1,23 @@
+# 캐릭터 바이블 - appearance 는 이 캐릭터가 나오는 모든 컷 프롬프트에 자동으로 붙습니다.
+# 디자인: 시안 8번 (2026-11-12 선택, 기준 이미지는 2K 재생성본) - 여우 같은 털복숭이 불 용
+id: pepper
+name: Pepper
+role: 오빠, 불 용
+age: 아기 (동생보다 조금 큼)
+personality: >
+  급하고 활발하다. 동생을 지키려고 늘 앞장서지만 불 조절이 서툴러 사고를 친다.
+  기분이 좋으면 꼬리 끝 불꽃이 커지고, 미안하면 불꽃이 작아진다.
+appearance: >
+  Pepper: an adorable chubby four-legged baby fire dragon boy with a fox-like look, an oversized round
+  head and a small round body, covered in soft fluffy bright orange fur with faint scale texture on the
+  forehead and legs, a fluffy white muzzle, cheeks, chest and belly, big pointed fox-like ear frills
+  with pale pink insides, two tiny rounded tan horns, huge sparkly emerald-green eyes, a tiny pink nose,
+  a cheeky smile with two little fangs, small orange bat-like wings, little orange paws with tiny claws,
+  and a long, very fluffy orange fox tail whose tip softly turns into a warm flickering flame,
+  slightly larger than his sister
+voice:
+  elevenlabs_voice_id: ""
+# 기준 이미지 (series/pepper_mint 기준 경로, 모든 컷에 함께 전달됩니다)
+reference_images:
+  - refs/pepper_front.jpg
+  - refs/pepper_side.jpg

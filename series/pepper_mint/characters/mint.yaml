@@ -1,0 +1,23 @@
+# 캐릭터 바이블 - appearance 는 이 캐릭터가 나오는 모든 컷 프롬프트에 자동으로 붙습니다.
+# 디자인: 시안 9번 (2026-11-12 선택, 기준 이미지는 2K 재생성본) - 베일 같은 서리 귀 장식의 은빛 얼음 용
+id: mint
+name: Mint
+role: 여동생, 얼음 용
+age: 아기 (오빠보다 조금 작음)
+personality: >
+  차분하고 호기심이 많지만 조금 수줍다. 오빠를 제일 좋아한다.
+  기쁘면 주변에 작은 눈송이가 날리고, 속상하면 발밑이 살짝 얼어붙는다.
+appearance: >
+  Mint: an adorable chubby four-legged baby ice dragon girl with an oversized round head and a small
+  round body, shimmering silvery-white scales with a pearly sparkle, a smooth ridged pale belly,
+  long flowing translucent frosty ear frills that hang down like delicate veils with a faint pink tint,
+  small pearly iridescent horns and a few tiny spikes on top of her head, huge sparkly pale-gold eyes
+  with long dark lashes, a tiny pink nose, rosy cheeks with frost freckles, a sweet open smile,
+  small translucent icy wings, little paws with tiny claws, and a tail ending in an ice-crystal tip,
+  slightly smaller than her brother
+voice:
+  elevenlabs_voice_id: ""
+# 기준 이미지 (series/pepper_mint 기준 경로, 모든 컷에 함께 전달됩니다)
+reference_images:
+  - refs/mint_front.jpg
+  - refs/mint_side.jpg

@@ -1,0 +1,79 @@
+# 파이프라인 설정.  API 키는 여기 넣지 말고 .env 에만 넣으세요.
+
+paths:
+  output: output          # 작업물/완성본 루트
+  series: series          # 시리즈 바이블(세계관, 캐릭터) 폴더
+  db: output/studio.db    # 상태 기록 (SQLite)
+
+# 각 단계에서 쓸 구현체.  mock 은 돈이 들지 않는 가짜 구현입니다.
+# 실제 API 로 바꿀 때는 한 단계씩 바꾸고, 바꾼 단계만 비용 확인을 받습니다.
+providers:
+  llm: mock        # mock | claude
+  visual: mock     # mock | image_api (1단계, Nano Banana 2.1) | kling | seedance (2단계 이후)
+  tts: mock        # mock | elevenlabs
+  render: ffmpeg   # ffmpeg | mock
+  publish: mock    # mock | instagram
+
+# 실제 API 호출 1회(한 단계 실행)에 허용하는 최대 예상 비용.  넘으면 확인 없이 중단.
+max_cost_per_run_usd: 3.00
+
+llm:
+  model: claude-opus-5-5      # claude-sonnet-5-5 / claude-haiku-5-5 로 바꾸면 더 저렴
+  effort: medium              # low | medium | high | xhigh | max
+  max_tokens: 16000
+  estimated_output_tokens: 8000   # 비용 예상용 (사고 토큰 포함 대략치)
+
+visual:
+  width: 1080
+  height: 1920
+  image_api:                  # providers.visual: image_api 일 때 (.env 의 GEMINI_API_KEY 필요)
+    model: gemini-nano-banana-2.1   # Nano Banana 2.1.  gemini-3.1-flash-image (Nano Banana 2) 도 가능
+    aspect_ratio: "9:16"
+    image_size: 2K            # 1K | 2K | 4K  (1K 는 1080x1920 으로 늘리면 흐려질 수 있음)
+    max_reference_images: 4   # 캐릭터 참고 이미지 최대 장수 (모델 한도 4)
+    max_wait_sec: 300         # 한 장을 기다리는 최대 시간 (넘으면 실패 처리)
+    poll_sec: 3               # 백그라운드 작업 확인 간격
+    request_timeout_sec: 60   # 요청 1번의 타임아웃 (SDK 기본값은 무한 대기)
+    extra_output_tokens: 1100 # 비용 예상용: 장당 사고/텍스트 출력 토큰 (실측 700~1,100)
+
+tts:
+  elevenlabs_model: eleven_multilingual_v2
+  sample_rate: 24000          # ElevenLabs pcm_24000 으로 받아 WAV 로 저장
+  chars_per_second: 7.0       # 한국어 낭독 속도 대략치 (mock 길이 계산용)
+
+render:
+  fps: 30
+  font_path: C:/Windows/Fonts/malgunbd.ttf   # 자막 폰트 (한글 지원 폰트)
+  subtitle_font_size: 60
+  subtitle_y_ratio: 0.66      # 자막 세로 위치 (화면 아래 인스타 UI 를 피함)
+  line_gap_sec: 0.25          # 대사/내레이션 사이 쉼
+  shot_tail_sec: 0.4          # 컷 끝 여유
+  zoom: true                  # 정지 이미지에 천천히 확대(켄 번즈) 효과
+  bgm_file: ""                # 예: assets/bgm/calm.mp3  (비우면 배경음악 없음)
+  bgm_volume: 0.12
+
+publish:
+  caption_footer: ""          # 모든 캡션 끝에 붙일 문구 (예: AI 제작 고지)
+
+# 단가표 (USD).  공식 가격표에서 확인한 값만 verified: true 로 표시하세요.
+pricing:
+  claude:
+    # 2026-11 기준 Anthropic 공식 1st-party 단가 (Haiku 5.5 는 프롬프트 100K 토큰 이하 기준)
+    verified: true
+    claude-opus-5-5:   {input_per_mtok: 4.00, output_per_mtok: 20.00}
+    claude-sonnet-5-5: {input_per_mtok: 2.00, output_per_mtok: 10.00}
+    claude-haiku-5-5:  {input_per_mtok: 0.10, output_per_mtok: 0.50}
+  image:
+    # 2026-11 기준 Google Gemini API 가격표 (aistudio.google.com/docs/pricing). 무료 사용량 없음
+    verified: true
+    gemini-nano-banana-2.1:
+      input_per_mtok: 1.50
+      image_output_per_mtok: 30.00
+      per_image: {1K: 0.0336, 2K: 0.0504, 4K: 0.113}
+    gemini-3.1-flash-image:
+      input_per_mtok: 0.50
+      image_output_per_mtok: 60.00
+      per_image: {"512": 0.045, 1K: 0.067, 2K: 0.101, 4K: 0.151}
+  elevenlabs:
+    verified: false           # 요금제에 따라 다름 - 확인 후 수정
+    per_1k_chars: 0.08

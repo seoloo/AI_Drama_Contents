@@ -1,0 +1,35 @@
+# 시리즈 바이블 - 사람이 직접 쓰고 고치는 "원작" 설정입니다.
+# 타깃: 해외 (대사 없음, 특정 국가 문화 요소 없음). 릴스 + 유튜브 쇼츠.
+id: pepper_mint
+title: Pepper & Mint
+genre: 무대사 3D 애니메이션 / 남매 코미디 + 뭉클함
+logline: >
+  불을 뿜는 오빠 용 Pepper 와 얼음을 뿜는 동생 용 Mint 는 서로를 제일 좋아하지만,
+  껴안기만 하면 김이 피어오른다. 그래도 둘은 매번 서로를 위할 방법을 찾는다.
+world: >
+  안개 낀 산골짜기의 아늑한 용 가족 동굴과 그 주변 (숲, 개울, 눈 덮인 언덕, 작은 꽃밭).
+  사람은 나오지 않는다. 조연은 다른 아기 동물들(토끼, 다람쥐, 아기 양 등)과 가끔 나오는 엄마 용.
+tone: >
+  10~20초 안에 끝나는 한 가지 상황. 대사 없이 표정과 행동, 효과음만으로 이해된다.
+  웃긴 편과 뭉클한 편을 번갈아. 폭력/위험한 장면 없음. 특정 국가, 명절, 문자, 상표 없음.
+visual_style: >
+  super cute kawaii stylized 3D animated family film look, plush-toy softness, chibi proportions,
+  soft rounded shapes, subsurface scattering on scales,
+  warm cozy lighting, gentle depth of field, rich but soft colors, expressive big eyes,
+  vertical 9:16 composition, no text, no logos
+narration_style: 없음 (무대사). 소리는 효과음(불꽃, 얼음, 김, 발소리)과 짧은 음악만.
+
+format: silent_3d           # 무대사 3D 애니 (이미지 -> 영상 클립 + 효과음)
+target_duration_sec: 15
+
+# 핵심 규칙 (대본 생성 AI 가 매 회 지켜야 할 것)
+#  - 둘이 직접 닿으면 "치익" 하고 김이 피어오른다 (시리즈의 반복 장치).
+#  - Pepper 의 불은 따뜻하게 해 주거나 실수로 녹이고, Mint 의 얼음은 식혀 주거나 실수로 얼린다.
+#  - 매 회 끝은 둘이 서로를 위하는 순간 (웃음 또는 뭉클함).
+
+narrator:
+  name: ""
+  elevenlabs_voice_id: ""
+
+# 사람(실사 인물)이 나오지 않으므로 false
+ai_generated_realistic_people: false
