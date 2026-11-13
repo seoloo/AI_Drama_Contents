@@ -13,10 +13,10 @@ tone: >
   10~20초 안에 끝나는 한 가지 상황. 대사 없이 표정과 행동, 효과음만으로 이해된다.
   웃긴 편과 뭉클한 편을 번갈아. 폭력/위험한 장면 없음. 특정 국가, 명절, 문자, 상표 없음.
 visual_style: >
-  super cute kawaii stylized 3D animated family film look, plush-toy softness, chibi proportions,
-  soft rounded shapes, subsurface scattering on scales,
-  warm cozy lighting, gentle depth of field, rich but soft colors, expressive big eyes,
-  vertical 9:16 composition, no text, no logos
+  photoreal-material 3D animated family feature-film look, matte soft velvety textures (never glossy or plastic),
+  dense realistic soft fur, big round expressive eyes with visible whites, bright happy expressions,
+  chunky rounded toy-friendly shapes, natural slightly muted colors, soft natural cinematic light,
+  gentle shallow depth of field, vertical 9:16 composition, no text, no logos
 narration_style: 없음 (무대사). 소리는 효과음(불꽃, 얼음, 김, 발소리)과 짧은 음악만.
 
 format: silent_3d           # 무대사 3D 애니 (이미지 -> 영상 클립 + 효과음)

@@ -24,8 +24,14 @@ AI로 숏폼 드라마를 만들어 인스타그램 릴스에 올린다. 최종 
 - visual=image_api 구현됨 (2026-11-12): Nano Banana 2.1 (`gemini-nano-banana-2.1`), google-genai SDK 의
   `client.interactions.create`, 9:16 / 2K, 캐릭터 참고 이미지 최대 4장. 실제 호출 확인 (2K 장당 실측 ~$0.07~0.09, 사고 토큰 포함).
 - 방향 전환 (2026-11-12): 드라마 대신 대사 없는 3D 캐릭터 숏폼 (해외 타겟, 한국 정서 배제).
-  시리즈 `series/pepper_mint` (불·얼음 남매 아기 용 Pepper & Mint). 디자인 확정: Pepper 시안 8, Mint 시안 9,
-  2K 기준 이미지 `series/pepper_mint/refs/*.jpg`. 다음: 영상 provider(Veo 3.1 Fast i2v 등) + 무음 형식(voice/자막 생략).
+  시리즈 `series/pepper_mint` (불·얼음 남매 아기 용 Pepper & Mint). 디자인 확정 (2026-11-13):
+  Pepper = 2차 시안 10, Mint = Pepper 와 같은 모델의 흰 털 버전 (5차 2번 + 1번 색). 질감은 @antaryaan 같은
+  무광 벨벳 + 실제 같은 털, 나중에 인형으로 만들기 쉬운 둥근 형태. 2K 기준 이미지 `series/pepper_mint/refs/*.jpg`.
+- 영상 (2026-11-13 시험): Gemini API 의 Veo 3.1 은 2026-10-22 종료. 대체 모델 `gemini-omni-1.2-flash` 는
+  v1beta 에서만 보임 (`http_options={"api_version": "v1beta"}`). `client.interactions.create` +
+  `response_format={"type":"video","aspect_ratio":"9:16","resolution":"720p","duration":"15s"}`, 참고 이미지 최대 6장,
+  3~15초, 24fps, 소리 포함. 720p 15초 실측 $1.06 (8초 $0.58). 아직 provider 로 연결 안 함 (스크립트로만 시험).
+  다음: 영상 provider + 무음 형식(voice/자막 생략).
 - publish=instagram 미구현: 사용자가 이미 확인한 게시 코드를 옮겨 올 예정 (어디 있는지 확인 필요).
 
 ## 단가 (config/settings.yaml 의 pricing)
@@ -46,7 +52,7 @@ AI로 숏폼 드라마를 만들어 인스타그램 릴스에 올린다. 최종 
 
 ## 확장 후보 (2단계 이후, 미확인 정보 포함)
 - Kling 3.0 (캐릭터 일관성, 여러 장면 이어 만들기), Seedance 2.0, Runway Gen-4.5
-- Veo 3.1 의 Gemini API 종료 / 대체 모델(gemini-omni-1.1-flash) 보도는 확인 필요
+- Veo 3.1 Gemini API 종료 확인됨 (2026-10-22) → Gemini Omni 1.2 Flash 사용 (영상 출력 $12/1M tok, 720p 약 $0.07/초)
 
 ## 개발 메모
 - 가상환경: `.venv` (Python 3.14). `pip install -e ".[dev,ffmpeg]"`
