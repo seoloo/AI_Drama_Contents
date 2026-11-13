@@ -12,6 +12,8 @@ output/*
 # 확정해서 실제로 쓰는 Pepper & Mint 이미지 (프로필, 키프레임)는 커밋
 !output/pepper_mint/
 *.mp4
+# 실제로 게시한 완성본 영상만 커밋 (시험 영상은 output/test 에 둔다)
+!output/pepper_mint/*.mp4
 *.mov
 *.wav
 *.mp3

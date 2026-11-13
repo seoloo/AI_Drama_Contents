@@ -32,7 +32,13 @@ AI로 숏폼 드라마를 만들어 인스타그램 릴스에 올린다. 최종 
   `response_format={"type":"video","aspect_ratio":"9:16","resolution":"720p","duration":"15s"}`, 참고 이미지 최대 6장,
   3~15초, 24fps, 소리 포함. 720p 15초 실측 $1.06 (8초 $0.58). 아직 provider 로 연결 안 함 (스크립트로만 시험).
   다음: 영상 provider + 무음 형식(voice/자막 생략).
-- publish=instagram 미구현: 사용자가 이미 확인한 게시 코드를 옮겨 올 예정 (어디 있는지 확인 필요).
+- 영상은 **원테이크**로 만든다 (2026-11-14 확정): 컷을 나눠 따로 만들고 이어 붙이면 컷마다 끊기고 소품 상태가
+  되돌아간다 (7컷 시도 실패). 카메라 고정, 처음부터 끝까지 한 장면, 소품 상태(녹음/얼음)는 끝까지 유지.
+- 1화 "Ice Cream Rescue" 게시 완료 (2026-11-14): 인스타 계정 @puffhatch, 약 30초 원테이크 영상 (사용자가 직접 만든 완성본).
+  완성본/캡션/게시 기록은 `output/pepper_mint/ep001_*`, 시험 영상은 `output/test/pepper_mint/`.
+- publish=instagram 은 아직 provider 로 연결 안 함. 게시는 Graph API resumable upload 로 확인됨
+  (`/{ig-id}/media` 에 `media_type=REELS&upload_type=resumable` → 돌려받은 `uri` 로 파일 전송 → `media_publish`).
+  "AI 정보" 라벨과 프로필 소개글은 API 로 못 바꾸고 앱에서 직접 설정.
 
 ## 단가 (config/settings.yaml 의 pricing)
 - Claude (공식, 2026-11): Opus 5.5 $4/$20, Sonnet 5.5 $2/$10, Haiku 5.5 $0.10/$0.50 (100만 토큰당 입력/출력)
