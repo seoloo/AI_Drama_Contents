@@ -10,7 +10,7 @@ world: >
   안개 낀 산골짜기의 아늑한 용 가족 동굴과 그 주변 (숲, 개울, 눈 덮인 언덕, 작은 꽃밭).
   사람은 나오지 않는다. 조연은 다른 아기 동물들(토끼, 다람쥐, 아기 양 등)과 가끔 나오는 엄마 용.
 tone: >
-  10~20초 안에 끝나는 한 가지 상황. 대사 없이 표정과 행동, 효과음만으로 이해된다.
+  한 가지 상황을 5~8초 컷 여러 개로 보여 준다 (길이 자유, 품질 우선). 대사 없이 표정과 행동, 효과음만으로 이해된다.
   웃긴 편과 뭉클한 편을 번갈아. 폭력/위험한 장면 없음. 특정 국가, 명절, 문자, 상표 없음.
 visual_style: >
   photoreal-material 3D animated family feature-film look, matte soft velvety textures (never glossy or plastic),
@@ -20,7 +20,7 @@ visual_style: >
 narration_style: 없음 (무대사). 소리는 효과음(불꽃, 얼음, 김, 발소리)과 짧은 음악만.
 
 format: silent_3d           # 무대사 3D 애니 (이미지 -> 영상 클립 + 효과음)
-target_duration_sec: 15
+target_duration_sec: 45     # 길이는 자유. 5~8초 컷(동작 하나)을 여러 개 만들어 이어 붙인다 (품질 우선)
 
 # 핵심 규칙 (대본 생성 AI 가 매 회 지켜야 할 것)
 #  - 둘이 직접 닿으면 "치익" 하고 김이 피어오른다 (시리즈의 반복 장치).
