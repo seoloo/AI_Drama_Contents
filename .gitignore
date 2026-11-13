@@ -8,7 +8,9 @@ credentials*.json
 token*.json
 
 # --- 생성물 (용량 크고 재생성 가능) ---
-output/
+output/*
+# 확정해서 실제로 쓰는 Pepper & Mint 이미지 (프로필, 키프레임)는 커밋
+!output/pepper_mint/
 *.mp4
 *.mov
 *.wav
