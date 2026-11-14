@@ -113,7 +113,11 @@ Sound: baby-dragon giggles, soft drip.
 - 해시태그: `#babydragon #cuteanimation #3danimation #siblings #icecream #aianimation`
 - AI 고지: 인스타의 "AI 정보" 라벨을 켠다 (실사 인물은 아니지만 AI 생성 영상임을 밝힌다).
 
-## 2화 "Too Hot Cocoa" (원테이크, 약 30초, 9:16)
+## 2화 "Too Hot Cocoa" (게시 완료 2026-11-14, @puffhatch)
+
+> 게시본은 30초 원테이크 영상이다 (`output/pepper_mint/ep002_too_hot_cocoa.mp4`, 2차 영상).
+> 아래 계획과 다른 점: 김 구름이 화면을 다 가릴 만큼 크고 크림은 생기지 않는다. 구름이 걷히면 넘친 코코아 자국이 사라져 있다.
+> 남은 결함: 15.4~16.2초에 Mint 한쪽 눈이 회색으로 비어 보이고, 21~24초에 하트 모양 김이 떠오른다.
 
 1화와 반대로 이번에는 **Mint가 곤란해지고 Pepper가 도와주다 일을 키운다.**
 
@@ -125,12 +129,14 @@ Sound: baby-dragon giggles, soft drip.
 | 5~9초 | 옆에서 자기 코코아를 마시던 Pepper가 보고, 머그를 내려놓고 가슴을 펴며 끄덕인다 | 그대로 얼어 있음 | 작은 "흠!" |
 | 9~15초 | Pepper가 머그 바닥에 작은 불꽃을 "후~" 분다. 서리가 녹고 다시 김이 올라 Mint 얼굴이 밝아진다. 그런데 계속 불어서 코코아가 부글부글 끓어 넘친다 | 녹음 → 끓어 넘침, 머그 옆면에 코코아가 흘러내림 | 화르륵, 부글부글 |
 | 15~19초 | Mint가 "앗 뜨거" 하며 머그를 이 손 저 손으로 옮기다 둘 사이 담요 위에 내려놓는다. 둘 다 당황해서 쳐다본다 | 계속 부글거림, 흘러내린 자국 그대로 | "힉", 부글부글 |
-| 19~22초 | 둘이 동시에 식히려고 얼굴을 내밀다 볼이 톡 닿는다. "펑!" 큰 김 구름이 화면을 덮는다 | 김 구름 | 톡, 큰 "POOF" |
-| 22~26초 | 김 구름이 줄어들며 머그 위로 내려앉아 **휘핑크림 탑과 마시멜로 3개**가 된다. 코코아는 잔잔하게 김만 난다 | 딱 좋은 코코아 + 휘핑크림, 옆면 흘러내린 자국은 그대로 | 폭신 "퐁" |
-| 26~30초 | Mint가 머그를 들어 Pepper에게 먼저 내민다. 한 모금씩 마시고 둘의 코끝에 분홍 마시멜로가 하나씩 붙는다. 킥킥 웃으며 볼을 맞댄다. 마지막에 Mint가 만족해서 숨을 내쉬자 머그 가장자리에 서리가 살짝 낀다 (루프) | 코끝 마시멜로, 머그에 서리 살짝 | 후루룩, 킥킥 |
+| 19~22초 | 둘이 동시에 머그를 향해 "후~" 분다. Pepper의 따뜻한 숨과 Mint의 찬 숨이 코코아 위에서 만나 "펑!" 하고 머그에서 김 구름이 솟는다. 구름은 머그 바로 위, 턱 아래 높이에 머문다 | 머그 위 김 구름 | 큰 "POOF" |
+| 22~26초 | 김 구름이 줄어들며 머그 안으로 다시 내려앉아 **코코아 위 하얀 크림**이 된다. 부글거림이 멈추고 김만 잔잔히 난다 | 딱 좋은 코코아 + 크림 (머그 안), 옆면 흘러내린 자국은 그대로 | 폭신 "퐁" |
+| 26~30초 | Mint가 머그를 들어 Pepper에게 먼저 내민다. 한 모금씩 조심히 마시고 웃는다 (얼굴은 깨끗하게). 머리를 맞대고 킥킥 웃는다. 마지막에 Mint가 만족해서 숨을 내쉬자 머그 가장자리에 서리가 살짝 낀다 (루프) | 머그에 서리 살짝 | 후루룩, 킥킥 |
 
-- **반복 장치**: 둘이 닿으면 "펑". 이번에는 그 김 구름이 휘핑크림이 되는 것이 반전이다.
-- **썸네일**: 22~26초, 휘핑크림 올라간 머그를 사이에 둔 두 얼굴.
+- **반복 장치**: 불과 얼음이 만나면 "펑". 이번에는 둘의 숨이 코코아 위에서 만나고, 김 구름이 머그 안 크림이 된다.
+- **주의 (1차 영상 실패)**: 볼이 닿아 김이 나게 했더니 구름이 머리 높이에 생겨 크림이 Mint 머리 위에 올라갔다.
+  김은 반드시 소품(머그)에서 나오고 소품으로 돌아가게 적는다. 얼굴/머리에 붙는 것은 넣지 않는다.
+- **썸네일**: 22~26초, 크림이 올라간 머그를 사이에 둔 두 얼굴.
 - **계절**: 11~12월(추수감사절~크리스마스)에 맞는 소재.
 
 ### 첫 장면 이미지 (1장만 만든다)
@@ -154,9 +160,10 @@ The first attached image is the exact first frame. Continue from it as ONE CONTI
 a single unbroken shot, no cuts, no scene changes, no time skips. The camera is locked: the same front-facing
 medium two-shot from start to end. Only the characters and the mug move.
 Keep PEPPER (orange baby fire dragon, left) and MINT (white baby ice dragon, right) exactly on-model.
-Their faces and fur stay clean the whole time; nothing ever appears on their faces except one marshmallow at the end.
+Their faces, noses, heads and fur stay completely clean and bare from start to end: nothing ever lands on them
+or sticks to them. The only props are the two mugs and the cocoa.
 Continuity rule: every change to the cocoa and the mug stays until the next action changes it. Frozen cocoa
-stays frozen until the flame melts it. Cocoa that spilled down the side of the mug stays there to the end.
+stays frozen until the flame melts it. Cocoa that ran down the side of the mug stays there to the end.
 Pepper's own orange mug stays on the blanket where he puts it.
 
 The action flows in this order without interruption. Steps 1-3 fill the first half of the video, steps 4-7
@@ -166,19 +173,20 @@ crackle: frost covers the mug, the steam stops. She blinks, turns the mug upside
 Nothing comes out. She turns it upright again and her ears droop.
 2) Pepper notices, puts his own mug down on the blanket, puffs out his chest and gives a confident nod.
 3) Pepper leans in and breathes a small gentle flame from his mouth under Mint's mug. The frost melts away,
-the cocoa turns liquid and steams again, and Mint's face lights up. But he keeps going: the cocoa bubbles hard
-and foams over the rim, running down the side of the mug.
-4) Mint squeaks and quickly sets the hot mug down on the blanket between them. It keeps bubbling. Both stare
-at it, worried.
-5) Both lean in at the same moment to blow on it, and their cheeks bump. A huge fluffy white cloud of steam
-puffs up with a POOF and fills the frame.
-6) The cloud shrinks and settles gently on top of the mug, turning into a tall swirl of whipped cream with
-three pink mini marshmallows. The cocoa is calm and gently steaming. The spilled cocoa marks are still on the
-side of the mug.
-7) Mint picks up the mug and offers Pepper the first sip. He sips, then she sips. Each of them ends up with
-exactly one pink mini marshmallow stuck on the tip of the nose, and one marshmallow is left on the cream.
-They giggle and press their cheeks together. Mint lets out a happy sigh and a little frost starts to creep
-along the rim of the mug.
+the cocoa turns liquid and steams again, and Mint's face lights up. But he keeps going: the cocoa bubbles and
+a little foam rises over the rim, with a few drips running down the side of the mug.
+4) Mint squeaks and quickly sets the hot mug down on the blanket between them. It keeps bubbling a little.
+Both stare at it, worried.
+5) Both lean down toward the mug at the same moment and blow on it. Pepper's warm breath and Mint's frosty
+breath meet right on the cocoa, and with a POOF a fluffy white cloud of steam bursts up out of the mug.
+The cloud stays low between them, just above the mug and below their chins. They pull their heads back
+in surprise.
+6) The cloud shrinks and sinks back down into the blue mug, and settles there as a small soft swirl of white
+cream on top of the cocoa, inside the mug. The bubbling has stopped: the cocoa is calm and gently steaming,
+just right. Nothing from the cloud touches Pepper or Mint. Both blink at the mug, amazed.
+7) Mint picks up the blue mug with both paws and offers Pepper the first sip. He takes a small careful sip and smiles.
+Then she takes a small careful sip and smiles. Their faces stay clean. They giggle and lean their heads together. Mint lets out a happy sigh
+and a little frost starts to creep along the rim of the mug.
 
 Cozy 3D animated family-film look, matte velvety textures (never glossy or plastic), realistic soft fur,
 bouncy squash-and-stretch acting, big expressive faces. Vertical 9:16.
@@ -191,7 +199,7 @@ bubbling, a tiny squeak, a big steam POOF, a soft plop, sips, baby-dragon giggle
 ```
 She froze it. He boiled it. Somehow… perfect. ☕🔥❄️
 
-Pepper & Mint · Ep. 2 "Too Hot Cocoa"
+Pepper & Mint, baby dragon siblings · Ep. 2 "Too Hot Cocoa"
 
-#puffhatch #pepperandmint #cuteanimation #aianimation #hotcocoa
+#babydragon #cutedragon #cuteanimation #aianimation #puffhatch
 ```

@@ -171,12 +171,21 @@
 | byflorss | 0.41M | #aistorytelling #aifilmmaking #aishortfilm #manhattan #shortfilm |
 | caroverseai | 0.51M | #aistorytelling #cinematicai #shortfilms #midjourneyart #aicinema |
 
-## Pepper & Mint 에 적용 (5개 고정 틀)
-1. 브랜드 1개: `#puffhatch`
-2. 캐릭터 1개: `#pepperandmint`
-3. 장르 1개: `#cuteanimation` (귀여운 캐릭터 릴스가 모이는 곳, 우리와 가장 가까움)
-4. 형식 1개: `#aianimation` 또는 `#3danimation`
-5. 그 화의 소재 1개: 1화 `#icecream`, 2화 `#hotcocoa`
+## Pepper & Mint 에 적용 (5개 고정 틀, 2차 수정)
+처음 안(`#puffhatch #pepperandmint` + 소재 태그)은 아무도 검색하지 않는 태그가 2~3개라 새 사람이 들어올 길이 좁았다.
+같은 날 `#babydragon` 페이지를 확인: 릴스 114만 개, 우리와 같은 아기 용 AI 캐릭터 계정이 모여 있고
+조회수 수천~수백만 (notalizard, pocket.dragon, dragon.realm, wyrmlings.ai, draevor.world 등).
+이 계정들은 `#babydragon` 과 `#cutedragon` 을 거의 항상 같이 쓴다.
+
+1. `#babydragon` - 우리와 똑같은 소재를 찾는 사람들이 모이는 곳 (114만 릴스)
+2. `#cutedragon` - babydragon 과 함께 쓰는 짝 태그
+3. `#cuteanimation` - 귀여운 캐릭터 애니 릴스
+4. `#aianimation` - 가장 큰 관련 태그 (257만 릴스)
+5. `#puffhatch` - 브랜드 태그는 1개만
+
+- 그 화의 소재 태그(`#icecream`, `#hotcocoa`)는 뺀다: 음식 사진을 찾는 사람에게 가는 태그라 우리와 맞지 않는다.
+- 태그 대신 캡션 문장에 "baby dragon" 같은 낱말을 넣어 검색에 걸리게 한다.
+- `#animation` (1.4억 릴스)처럼 너무 큰 태그는 바로 묻힌다.
 
 참고 계정: @antaryaan 은 태그 5개를 전부 자기 브랜드/캐릭터/그 화 제목으로 쓴다 (`#antaryaan #antu #babyelephant #duckling #theshake`).
 캡션은 "한 줄 상황 + 누구에게 보내라는 문장 + 내용 설명 한 줄" 구조.
