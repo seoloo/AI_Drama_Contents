@@ -1,8 +1,10 @@
-# Pepper & Mint - 릴스용 스토리 (2026-11-13, 2판)
+# Pepper & Mint - 릴스용 스토리 (2026-11-14, 3판)
 
 ## 릴스용 공통 원칙
-- **품질이 먼저, 길이는 자유**: 한 번에 긴 영상을 뽑지 않고, **컷 하나에 동작 하나**(5~8초)로 나눠 만든 뒤 이어 붙인다.
-  AI 영상은 한 클립에 사건이 많을수록 캐릭터가 뭉개지고 동작이 어색해진다. 컷을 나누면 이상한 컷만 다시 만들면 된다.
+- **원테이크**: 처음부터 끝까지 컷 없이 한 장면으로 이어진다 (약 30초). 카메라는 고정된 정면 투샷.
+  컷을 나눠 따로 만들어 이어 붙이는 방식은 쓰지 않는다 (1화에서 실패: 컷마다 끊기고 소품 상태가 되돌아감).
+- **상태 유지**: 한번 바뀐 것(녹은 아이스크림, 언 코코아, 흘러내린 자국)은 다음 동작이 바꾸기 전까지 그대로 남는다.
+  프롬프트에 시간 순서와 "되돌아가지 않는다"를 반드시 적는다.
 - **첫 1초 훅**: 첫 화면부터 "어? 큰일이다" 하는 문제 상황으로 시작한다 (인사, 배경 소개 없음).
 - **구조**: 문제 → 불/얼음 때문에 더 커짐 → 한 번 더 꼬임 → "펑" 김 → 귀여운 반전 → 서로 챙기는 순간.
   컷이 바뀔 때마다 새 사건이 생겨 끝까지 보게 만든다.
@@ -11,25 +13,27 @@
 - **다시 보기(루프)**: 마지막 장면이 첫 장면과 자연스럽게 이어지면 반복 재생이 늘어난다.
 - **썸네일(첫 프레임)**: 두 캐릭터 얼굴이 크게 보이고, 표정이 과장된 장면.
 
-## 컷이 이어져 보이게 만드는 방법
-1. **장소, 빛, 소품을 고정한다**: 모든 컷 프롬프트 앞에 아래 "공통 설정"을 그대로 붙인다.
-2. **컷마다 첫 장면 이미지(키프레임)를 먼저 만든다**: Nano Banana 2.1, 2K, 9:16, 캐릭터 참고 이미지 첨부.
-   사람이 키프레임을 보고 승인한 뒤에만 영상으로 만든다 (영상이 이미지보다 훨씬 비싸다).
-3. **동작이 바로 이어지는 컷**(4→5→6→7)은 앞 컷의 마지막 프레임을 다음 컷의 시작 참고 이미지로 쓴다.
-4. 컷별 영상을 FFmpeg 로 이어 붙이고, 컷 사이 소리를 짧게 겹쳐 끊김을 없앤다.
+## 만드는 방법 (원테이크)
+1. **첫 장면 이미지 1장만 만든다**: Nano Banana 2.1, 2K, 9:16, 캐릭터 참고 이미지 첨부. 사람이 보고 승인한다.
+2. **영상은 그 한 장에서 시작해 끝까지 이어서 만든다**: 시간 순서대로 적은 프롬프트 하나를 쓴다.
+   도구가 한 번에 15초까지만 만들면, 앞부분의 마지막 프레임을 그대로 뒷부분의 첫 장면으로 넣어 이어 만든다.
+3. 장소, 빛, 카메라는 처음부터 끝까지 고정한다. 움직이는 것은 캐릭터와 소품뿐이다.
 
 ## 에피소드 후보
 
 | # | 제목 | 한 줄 요약 | 성격 |
 |---|---|---|---|
 | 1 | Ice Cream Rescue | Pepper 손에서 녹는 아이스크림을 Mint가 얼려 구하지만 너무 얼려 버린다 | 웃김 + 뭉클 |
-| 2 | Too Hot Cocoa | Pepper가 데운 코코아가 너무 뜨거워 Mint가 식혀 주고, 둘이 마시멜로 수염을 단다 | 뭉클 |
+| 2 | Too Hot Cocoa | Mint 입김에 얼어 버린 코코아를 Pepper가 녹여 주다 끓어 넘치고, 김 구름이 휘핑크림이 된다 | 웃김 + 뭉클 |
 | 3 | Bubble Bath | 차가운 목욕물을 Pepper 꼬리로 데우다 거품이 폭발해 둘이 양처럼 된다 | 웃김 |
 | 4 | Popcorn Sneeze | Pepper의 재채기 불꽃에 팝콘이 폭발하고, Mint가 공중에서 얼려 눈송이처럼 떠다닌다 | 웃김 + 신기 |
 | 5 | Mittens | 안을 때마다 김이 나자, Mint가 Pepper에게 벙어리장갑을 끼워 주고 꼭 안는다 | 뭉클 |
 | 6 | Bedtime | 추운 밤 Mint가 떨자 Pepper가 꼬리 불꽃을 수면등처럼 켜 주고 함께 잠든다 | 뭉클 |
 
-## 1화 "Ice Cream Rescue" (7컷, 약 43초, 9:16)
+## 1화 "Ice Cream Rescue" (게시 완료 2026-11-14, @puffhatch)
+
+> 게시본은 약 30초 원테이크 영상이다 (`output/pepper_mint/ep001_ice_cream_rescue.mp4`).
+> 아래 7컷 구성은 처음 시도했다가 버린 안이다. 이야기 흐름 참고용으로만 남긴다.
 
 ### 컷 구성
 
@@ -107,3 +111,86 @@ Sound: baby-dragon giggles, soft drip.
 - 캡션: `He melts it. She saves it. Teamwork? 🍦🔥❄️ #PepperAndMint`
 - 해시태그: `#babydragon #cuteanimation #3danimation #siblings #icecream #aianimation`
 - AI 고지: 인스타의 "AI 정보" 라벨을 켠다 (실사 인물은 아니지만 AI 생성 영상임을 밝힌다).
+
+## 2화 "Too Hot Cocoa" (원테이크, 약 30초, 9:16)
+
+1화와 반대로 이번에는 **Mint가 곤란해지고 Pepper가 도와주다 일을 키운다.**
+
+### 시간 순서
+
+| 시간 | 일어나는 일 | 소품 상태 | 소리 |
+|---|---|---|---|
+| 0~5초 | (훅) Mint가 김 나는 코코아 머그를 들어 한 모금 마시려는 순간, 입김이 닿아 코코아가 쩍 얼어 버린다. 머그를 뒤집어 흔들어도 안 나온다. 귀가 축 처진다 | 코코아 = 갈색 얼음 덩어리, 머그에 서리 | 쩍 어는 소리, 톡톡 |
+| 5~9초 | 옆에서 자기 코코아를 마시던 Pepper가 보고, 머그를 내려놓고 가슴을 펴며 끄덕인다 | 그대로 얼어 있음 | 작은 "흠!" |
+| 9~15초 | Pepper가 머그 바닥에 작은 불꽃을 "후~" 분다. 서리가 녹고 다시 김이 올라 Mint 얼굴이 밝아진다. 그런데 계속 불어서 코코아가 부글부글 끓어 넘친다 | 녹음 → 끓어 넘침, 머그 옆면에 코코아가 흘러내림 | 화르륵, 부글부글 |
+| 15~19초 | Mint가 "앗 뜨거" 하며 머그를 이 손 저 손으로 옮기다 둘 사이 담요 위에 내려놓는다. 둘 다 당황해서 쳐다본다 | 계속 부글거림, 흘러내린 자국 그대로 | "힉", 부글부글 |
+| 19~22초 | 둘이 동시에 식히려고 얼굴을 내밀다 볼이 톡 닿는다. "펑!" 큰 김 구름이 화면을 덮는다 | 김 구름 | 톡, 큰 "POOF" |
+| 22~26초 | 김 구름이 줄어들며 머그 위로 내려앉아 **휘핑크림 탑과 마시멜로 3개**가 된다. 코코아는 잔잔하게 김만 난다 | 딱 좋은 코코아 + 휘핑크림, 옆면 흘러내린 자국은 그대로 | 폭신 "퐁" |
+| 26~30초 | Mint가 머그를 들어 Pepper에게 먼저 내민다. 한 모금씩 마시고 둘의 코끝에 분홍 마시멜로가 하나씩 붙는다. 킥킥 웃으며 볼을 맞댄다. 마지막에 Mint가 만족해서 숨을 내쉬자 머그 가장자리에 서리가 살짝 낀다 (루프) | 코끝 마시멜로, 머그에 서리 살짝 | 후루룩, 킥킥 |
+
+- **반복 장치**: 둘이 닿으면 "펑". 이번에는 그 김 구름이 휘핑크림이 되는 것이 반전이다.
+- **썸네일**: 22~26초, 휘핑크림 올라간 머그를 사이에 둔 두 얼굴.
+- **계절**: 11~12월(추수감사절~크리스마스)에 맞는 소재.
+
+### 첫 장면 이미지 (1장만 만든다)
+
+```
+Use the attached reference images of PEPPER (fluffy orange fox-like baby fire dragon boy, green eyes, plush
+flame-tuft tail) and MINT (his little sister, same character model in snow-white fur with icy-blue ears,
+wings and horns, sapphire-blue eyes, snowflake ice-crystal tail tip). Keep both designs exactly the same.
+Front-facing medium two-shot, vertical 9:16: Pepper (left) and Mint (right) sit side by side on a cream and
+soft-red plaid picnic blanket on a meadow, under a big tree with golden autumn leaves. Mint holds a big
+sky-blue mug of steaming hot cocoa in both paws, just about to take a sip, smiling. Pepper sips from a small
+orange mug. A wicker basket and a thermos softly blurred behind them, a few fallen leaves on the blanket,
+warm low afternoon sunlight from the left. Cozy 3D animated family-film look, matte velvety textures (never
+glossy or plastic), realistic soft fur, big expressive faces, gentle shallow depth of field. No text.
+```
+
+### 영상 프롬프트 (첫 장면 이미지 + 캐릭터 참고 이미지와 함께)
+
+```
+The first attached image is the exact first frame. Continue from it as ONE CONTINUOUS TAKE of 30 seconds:
+a single unbroken shot, no cuts, no scene changes, no time skips. The camera is locked: the same front-facing
+medium two-shot from start to end. Only the characters and the mug move.
+Keep PEPPER (orange baby fire dragon, left) and MINT (white baby ice dragon, right) exactly on-model.
+Their faces and fur stay clean the whole time; nothing ever appears on their faces except one marshmallow at the end.
+Continuity rule: every change to the cocoa and the mug stays until the next action changes it. Frozen cocoa
+stays frozen until the flame melts it. Cocoa that spilled down the side of the mug stays there to the end.
+Pepper's own orange mug stays on the blanket where he puts it.
+
+The action flows in this order without interruption. Steps 1-3 fill the first half of the video, steps 4-7
+the second half:
+1) Mint lifts her big blue mug to take a sip. As her frosty breath touches it, the cocoa freezes solid with a
+crackle: frost covers the mug, the steam stops. She blinks, turns the mug upside down and gives it a shake.
+Nothing comes out. She turns it upright again and her ears droop.
+2) Pepper notices, puts his own mug down on the blanket, puffs out his chest and gives a confident nod.
+3) Pepper leans in and breathes a small gentle flame from his mouth under Mint's mug. The frost melts away,
+the cocoa turns liquid and steams again, and Mint's face lights up. But he keeps going: the cocoa bubbles hard
+and foams over the rim, running down the side of the mug.
+4) Mint squeaks and quickly sets the hot mug down on the blanket between them. It keeps bubbling. Both stare
+at it, worried.
+5) Both lean in at the same moment to blow on it, and their cheeks bump. A huge fluffy white cloud of steam
+puffs up with a POOF and fills the frame.
+6) The cloud shrinks and settles gently on top of the mug, turning into a tall swirl of whipped cream with
+three pink mini marshmallows. The cocoa is calm and gently steaming. The spilled cocoa marks are still on the
+side of the mug.
+7) Mint picks up the mug and offers Pepper the first sip. He sips, then she sips. Each of them ends up with
+exactly one pink mini marshmallow stuck on the tip of the nose, and one marshmallow is left on the cream.
+They giggle and press their cheeks together. Mint lets out a happy sigh and a little frost starts to creep
+along the rim of the mug.
+
+Cozy 3D animated family-film look, matte velvety textures (never glossy or plastic), realistic soft fur,
+bouncy squash-and-stretch acting, big expressive faces. Vertical 9:16.
+No speech, no words, no music, no text on screen. Sound effects only: ice crackle, small fire whoosh,
+bubbling, a tiny squeak, a big steam POOF, a soft plop, sips, baby-dragon giggles.
+```
+
+### 인스타그램 게시 문구 (영어, 안)
+
+```
+She froze it. He boiled it. Somehow… perfect. ☕🔥❄️
+
+Pepper & Mint · Ep. 2 "Too Hot Cocoa"
+
+#puffhatch #pepperandmint #cuteanimation #aianimation #hotcocoa
+```
