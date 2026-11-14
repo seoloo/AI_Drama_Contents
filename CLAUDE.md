@@ -36,9 +36,17 @@ AI로 숏폼 드라마를 만들어 인스타그램 릴스에 올린다. 최종 
   되돌아간다 (7컷 시도 실패). 카메라 고정, 처음부터 끝까지 한 장면, 소품 상태(녹음/얼음)는 끝까지 유지.
 - 1화 "Ice Cream Rescue" 게시 완료 (2026-11-14): 인스타 계정 @puffhatch, 약 30초 원테이크 영상 (사용자가 직접 만든 완성본).
   완성본/캡션/게시 기록은 `output/pepper_mint/ep001_*`, 시험 영상은 `output/test/pepper_mint/`.
+- 2화 "Too Hot Cocoa" 게시 완료 (2026-11-14). 3화 "Runaway Snowball" 은 2026-11-15 02:00 (한국 시간) 게시 예약.
+  영상은 사용자가 Claude 앱(힉스필드 연결)에서 만들고, 여기서는 프롬프트 준비, 확인, 게시를 맡는다.
+  해시태그는 게시물당 5개까지: `#babydragon #cutedragon #cuteanimation #aianimation #puffhatch`.
+- 4화부터의 스토리 규칙은 `docs/research/2026-11-14_ai_animation_shorts_100.md` 의 "4화부터 적용할 규칙"을 따른다.
 - publish=instagram 은 아직 provider 로 연결 안 함. 게시는 Graph API resumable upload 로 확인됨
   (`/{ig-id}/media` 에 `media_type=REELS&upload_type=resumable` → 돌려받은 `uri` 로 파일 전송 → `media_publish`).
   "AI 정보" 라벨과 프로필 소개글은 API 로 못 바꾸고 앱에서 직접 설정.
+- 예약 게시 (2026-11-14): 인스타 API 에는 릴스 예약이 없다. `scripts/ig_reel.py prepare <이름> --thumb-ms N` 으로
+  영상을 미리 올려 두고(24시간 유효), Windows 작업 스케줄러의 1회용 작업이 정해진 시간에
+  `scripts/ig_reel.py publish <이름> --not-after <시각>` 을 실행한다. PC 가 켜져 있고 로그인된 상태여야 한다.
+  결과는 `output/pepper_mint/epNNN_publish.json` 과 `epNNN_publish.log`.
 
 ## 단가 (config/settings.yaml 의 pricing)
 - Claude (공식, 2026-11): Opus 5.5 $4/$20, Sonnet 5.5 $2/$10, Haiku 5.5 $0.10/$0.50 (100만 토큰당 입력/출력)

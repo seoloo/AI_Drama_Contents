@@ -14,6 +14,9 @@ output/*
 *.mp4
 # 실제로 게시한 완성본 영상만 커밋 (시험 영상은 output/test 에 둔다)
 !output/pepper_mint/*.mp4
+# 예약 게시 중에만 쓰는 파일 (게시가 끝나면 epNNN_publish.json 만 남긴다)
+output/pepper_mint/*_pending.json
+output/pepper_mint/*_publish.log
 *.mov
 *.wav
 *.mp3
