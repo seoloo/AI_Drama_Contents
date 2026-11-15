@@ -36,7 +36,9 @@ AI로 숏폼 드라마를 만들어 인스타그램 릴스에 올린다. 최종 
   되돌아간다 (7컷 시도 실패). 카메라 고정, 처음부터 끝까지 한 장면, 소품 상태(녹음/얼음)는 끝까지 유지.
 - 1화 "Ice Cream Rescue" 게시 완료 (2026-11-14): 인스타 계정 @puffhatch, 약 30초 원테이크 영상 (사용자가 직접 만든 완성본).
   완성본/캡션/게시 기록은 `output/pepper_mint/ep001_*`, 시험 영상은 `output/test/pepper_mint/`.
-- 2화 "Too Hot Cocoa" 게시 완료 (2026-11-14). 3화 "Runaway Snowball" 은 2026-11-15 02:00 (한국 시간) 게시 예약.
+- 2화 "Too Hot Cocoa" 게시 완료 (2026-11-14). 3화 "Runaway Snowball" 게시 완료 (2026-11-15 02:00, 예약 게시).
+  4화 "Race Day" 게시 완료 (2026-11-15 10:18, 35초). 5화 "Balloon Battle" 은 2026-11-15 17:00 (한국 시간) 게시 예약.
+  회차별 게시 기록은 `series/pepper_mint/stories.md` 의 "3화부터의 게시 기록".
   영상은 사용자가 Claude 앱(힉스필드 연결)에서 만들고, 여기서는 프롬프트 준비, 확인, 게시를 맡는다.
   해시태그는 게시물당 5개까지: `#babydragon #cutedragon #cuteanimation #aianimation #puffhatch`.
 - 4화부터의 스토리 규칙은 `docs/research/2026-11-14_ai_animation_shorts_100.md` 의 "4화부터 적용할 규칙"을 따른다.
